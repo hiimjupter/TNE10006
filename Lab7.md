@@ -2,11 +2,11 @@
 ## Initial configuration
 We will construct our network based on the following topology
 
-![Network topology]()
+![Network topology](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/Network%20topology.png?raw=true)
 
 The constructed network in Packet Tracer might look like this:
 
-![Packet_tracer_topo]()
+![Packet_tracer_topo](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/Before_disable.png?raw=true)
 
 ## Part 1
 **Network's components**
@@ -27,24 +27,24 @@ According to the picture above, we can acquire the following information about t
 ## Part 2
 After disabling some interfaces according to the tutorial, we have the following topology:
 
-![after_topology]()
+![after_topology](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/After_disable.png?raw=true)
 
 We can then answer some questions in the Lab.
 
-![answer1]()
+![answer1](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/Answer.png?raw=true)
 
-![answer2]()
+![answer2](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/Answer2.png?raw=true)
 
 ## Part 3
 We can change to alternative port by configuring some attribute of the Non-Root Switch, however, before doing that, let's calculate the cost of each interface according to the picture below.
 
-![Packet_tracer_topo]()
+![after_topology](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/After_disable.png?raw=true)
 
 **It is important to remember that the root cost is the total cost of the outgoing interfaces along the path to the root bridge, therefore:**
 + When a switch is directly connected to the root bridge, the root path cost for that switch is zero.
 + When a switch is not directly connected to the root bridge, the root path cost is calculated based on the cumulative cost of all the links between the switch and the root bridge. For example:
 
-![calculate_logic]()
+
 
 ```
 We only have 3 line of connection from Non-Root Bridge to the Root Bridge currently available:
@@ -65,11 +65,11 @@ Suppose we want to change F0/4 to be the Root port for S1, we can increase the c
 => Making S1 -> S4 -> S3 more efficient than from S1 -> S3
 ```
 
-![change1](asd)
+![change1](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/Change1.png?raw=true)
 
 ```
 Suppose we want to change F0/4 to be the Root port for S4, we can increase the cost from G0/6 -> G0/6 to 43. (Because From S4 -> S1 -> S3 currently is 23 + 19 = 42)
 => Making S4 -> S1 -> S3 more efficient than from S4 -> S3
 ```
 
-![Change2](asd)
+![Change2](https://github.com/Catcurity123/TNE10006/blob/main/Picture/Lab7/Change2.png?raw=true)
