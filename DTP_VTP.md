@@ -22,7 +22,7 @@ There are 2 modes regarding DTP:
 - To disable DTP negotiation, use the following:
   - **switchport nonegotiate**
 
-![DTP mode chart](as)
+![DTP mode chart](https://github.com/Catcurity123/TNE10006/blob/main/Picture/DTP/DTPChart.png?raw=true)
 
 ### **VTP - VLAN Trunking Protocol**
 VTP allows for VLANs configuration on a central VTP server switch, and other switches will synchronize their VLAN database on the server. It is designed for large networks with many VLANs, so it is rarely used and is recommended to not use it.
