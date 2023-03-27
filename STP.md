@@ -1,4 +1,6 @@
-# STP - Spanning Tree Protocol## Description:
+# STP - Spanning Tree Protocol
+
+## Description:
 STP stands for Spanning Tree Protocol, which is a network protocol used to prevent loops in a network topology.
 
 
