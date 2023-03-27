@@ -93,7 +93,8 @@ The root port is selected based on 3 criteria:
 ### Spanning Tree Port States
 
 There are 4 states of STP port and 2 attributes for those states:
-![STP state]()
+
+![STP state](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/STPState.png?raw=true)
 
 - **Root/Designated** ports remain **stable** in **Forwarding** state.
 - **Non-designated** ports remain stable in a **Blocking** state.
@@ -127,10 +128,11 @@ Let's talk more about STP Port State:
   * A port in the Forwarding state sends/receives normal traffic.
   * A port in the Forwarding state learns MAC address.
 
-![STP port summary]()
+![STP port summary](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/SummaryPortState.png?raw=true)
 
 ### Spanning Tree Timers
-![Spanning Tree Timer]()
+
+![Spanning Tree Timer](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/SpanningTreeTimer.png?raw=true)
 
 * Therefore, STP Max Age Timer is crucial for detecting error in network topology and issues appropriate measures to fix the error.
 
@@ -144,7 +146,7 @@ Let's talk more about STP Port State:
 ### **PORTFAST**
 It is noteworthy that only interfaces connected to another switch can form a Layer 2 loop, therefore, there is no point in transitioning from blocking to listening to learning for interface that is connected to **end-user**.
 
-![Interface connected to end-user]()
+![Interface connected to end-user](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/PortFast.png?raw=true)
 
 * Portfast allows a port to move immediately to the **Forwading** state, bypassing **Listening and Learning**.
 
@@ -152,22 +154,22 @@ It is noteworthy that only interfaces connected to another switch can form a Lay
 * If enable on a port connected to another switch it could cause a Layer 2 loop.
 
 
-### **STP Load-Balancing
+### **STP Load-Balancing**
 Different VLANs may have different STP topology for load-balancing, suppose we have the following example:
 
-![Vlan1]()
+![Vlan1](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/Vlan1.png?raw=true)
 
-![Vlan2]()
+![Vlan2](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/Vlan2.png?raw=true)
 
 If we have multiple VLANs in our network, blocking the same interface in each VLAN is a waste of interface bandwith, that interface will be doing nothing, just waiting for another connection  to fail so it can start forwarding.
 
 However, if we configure different root bridge for different VLANs, different VLANs will disable different interfaces making the best use of its bandwith. Another example as follows:
 
-![STP load-balancing Ex]()
+![STP load-balancing Ex](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/Ex.png?raw=true)
 
 
-![STP load-balancing Ex2]()
+![STP load-balancing Ex2](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/Vlan10.png?raw=true)
 
 
 
-![STP load-balancing Ex3]()
+![STP load-balancing Ex3](https://github.com/Catcurity123/TNE10006/blob/main/Picture/STP/vlan20.png?raw=true)
