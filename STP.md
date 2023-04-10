@@ -76,8 +76,8 @@ Root cost is calculated based on the following:
 
 The root port is selected based on 3 criteria:
 - Lowest root cost.
-- Lowest neighbor bridge ID.
-- Lowest neighbor port ID. (STP Port ID = Priority + Port Number)
+- Lowest neighbor bridge ID. (combination of priority and MAC)
+- Lowest neighbor port ID. 
 
 **IT IS CRUCIAL TO REMEMBER THAT THE TWO TIE-BREAKER IS IN THE NEIGHBOR NOT LOCAL**
 
