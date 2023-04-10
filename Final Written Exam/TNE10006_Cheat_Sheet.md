@@ -284,7 +284,7 @@ TCP's 3-way handshake is a mechanic that TCP use to initiate the conncetion in l
 
 It is **important** to remember that sequence number and acknowledge number are measurement of bytes being sent not segment. and the ACK in data transmission is different from ACK in 3 way handshake
 
-![import]()https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/import.png
+![import](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/import.png)
 
 **Another key point of TCP is that it is full-duplex** meaning that both parties can send and receive data at the same time.
 
