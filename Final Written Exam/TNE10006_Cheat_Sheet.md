@@ -467,3 +467,39 @@ Wireless has some ares of concern including:
 
 + **Security**
 
+**10. Wireless Connection**
+
+IEEE 802.11 defines the use of wireless LANs.
+
+**Wifi uses two main bands** 2.4GHz and 5GHz.
+
+**802.11 defines different kinds of service sets** which are groups of wireless network devices. There are three main types: Independent, Infrastructure, Mesh.
+
+All devices in a service set share the same SSID (Service Set Identifier), it is a human-readable name which identifies the service set (SWINBURNE2G for example).
+
+** An access point (AP)** in wireless networking is a device that acts as a central hub for wireless devices to connect to a wired network.
+
+**10.1 Service Sets: Independent Basic Service Set (IBSS)**: is a wireless network in which two or more wireless devices connect without using an AP, also called **ad hoc** network, it is usually used for file transfer (AirDrop).
+
+![adhoc](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/adhoc.png)
+
+**10.2 Service Sets: Basic Service Set (BSS)**: is a kind of infrastructure service set in which clients connect to each other via an AP, but not directly to each other.
+
+A **Basic Service Set ID (BSSID)** is used to uniquely identify the AP, note that other APs can use the same SSID, but not the same BSSID, the BSSID is the MAC address of the AP's radio.
+
+Wireless devices request to associate with the BSS, and those which have associated are called 'client' or 'stations'.
+
+The area around an AP where its signal is usable is called a **Basic Service Area (BSA)**.
+
+![BSS](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/BSS.png)
+
+**10.3 Service Sets: Extended Service Sets (ESS)**: is used to create larger wireless LANs beyond the range of a single AP. APs with their own BSSs are connected by a **wired network**.
+
++ Each BSS uses the same SSID
++ Each BSS has a unique BSSID
++ Each BSS uses a different channel to avoid interference.
+
+Clients in ESS can pass between APs without having to reconnect, providing a seamless WI-FI experience when moving between APs which is called **roaming**.
+
+![ESS](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/ESS.png)
+
