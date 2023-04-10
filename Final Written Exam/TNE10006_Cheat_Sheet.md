@@ -3,18 +3,22 @@
 ## 1. Reference Model and Data Encapsulation
 
 **The OSI Reference Model**
+
 ![OSI](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/OSIModel.png)
 
 
 **The TCP/IP Protocol Model**
+
 ![TCP/IP](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/TCP_IP%20Model.png)
 
 
 **TCP/IP and OSI comparison**
+
 ![compare](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/TCPIP%20and%20OSI%20comparison.png)
 
 
 **Protocol Data Units**
+
 ![PDU](https://github.com/Catcurity123/TNE10006/blob/main/Final%20Written%20Exam/Picture/PDU.png)
 
 + Data - The general term for the PDU used at the application layer.
